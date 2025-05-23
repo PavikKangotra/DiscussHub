@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": false,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "noImplicitAny": false,
+    "ignoreDeprecations": "5.0",
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "types": [],
+    "typeRoots": ["./node_modules/@types", "./src/types"],
+    "paths": {
+      "babel__*": ["./src/types/babel.d.ts"],
+      "*": ["./src/types/*", "node_modules/*"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}
